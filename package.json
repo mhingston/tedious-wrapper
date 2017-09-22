@@ -1,0 +1,16 @@
+{
+  "name": "tedious-wrapper",
+  "version": "1.0.0",
+  "description": "A simple wrapper for tedious (TDS driver)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Miles Hingston <miles@bitshift.cc>",
+  "license": "MIT",
+  "dependencies": {
+    "tedious": "^2.0.1",
+    "tedious-connection-pool": "github:mhingston/tedious-connection-pool"
+  }
+}
