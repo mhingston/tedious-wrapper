@@ -172,7 +172,7 @@ Perform a [request](http://tediousjs.github.io/tedious/api-request.html). This m
  * `parameters` {Array[]} An array of arrays containing the the [parameter definitions](http://tediousjs.github.io/tedious/api-request.html#function_addParameter).
  * `options` {Object} A object containing the below properties.
    * callProcedure {Boolean} Use [callProcedure](http://tediousjs.github.io/tedious/api-connection.html#function_callProcedure).
-   * transformers {Object[]} An array of objects as below. This is used for defining rules for transforming raw values into other representations as required, e.g. formatting date objects as strings. If you define multiple rules that affect the same column(s) only the first rule will be processed.
+   * transformers {Object[]} An array of objects as below. This is used for defining rules for transforming raw values into other representations as required, e.g. formatting date objects as strings.
 
    ```javascript
    {
