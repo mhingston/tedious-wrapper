@@ -1,6 +1,6 @@
 const tedious = require('tedious');
 const ConnectionPool = require('tedious-connection-pool');
-const logger = {};
+let logger = {};
 
 class TediousWrapper
 {
@@ -11,7 +11,12 @@ class TediousWrapper
         config.connection.options.rowCollectionOnRequestCompletion = false;
         this.config = config;
 
-        if(typeof _logger === 'function')
+        if(_logger && typeof _logger.log === 'function')
+        {
+            logger = _logger;
+        }
+
+        else if(typeof _logger === 'function')
         {
             logger.log = _logger;
         }
