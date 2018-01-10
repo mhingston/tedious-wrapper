@@ -10,7 +10,7 @@
   "author": "Miles Hingston <miles@bitshift.cc>",
   "license": "MIT",
   "dependencies": {
-    "tedious": "^2.0.1",
+    "tedious": "^2.2.3",
     "tedious-connection-pool": "github:mhingston/tedious-connection-pool"
   }
 }
