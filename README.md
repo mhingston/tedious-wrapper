@@ -37,8 +37,7 @@ const config = // example config
         min: 1,
         max: 10,
         idleTimeout: 10000,
-        acquireTimeout: 12000,
-        log: false
+        acquireTimeout: 12000
     }
 }
 

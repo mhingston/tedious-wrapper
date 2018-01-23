@@ -31,6 +31,7 @@ class TediousWrapper
             logger.log = () => {};
         }
 
+        config.pool.log = logger;
         this.connectionPool = new ConnectionPool(config.pool, config.connection);
     }
 
