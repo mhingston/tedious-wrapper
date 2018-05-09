@@ -126,10 +126,10 @@ const myBulkLoad =
         [2, 'B'],
         [3, 'C']
     ],
-    callback((error, rowCount) =>
+    callback: (error, rowCount) =>
     {
         // your code goes here
-    })
+    }
 }
 
 // Callback
@@ -193,10 +193,10 @@ const myRequest =
     [
         ['UserID', db.types.Int, 1]
     ],
-    callback((error, resultSets) =>
+    callback: (error, resultSets) =>
     {
         // your code goes here
-    })
+    }
 }
 
 // Callback
@@ -206,7 +206,7 @@ db.request(myRequest);
 db.request(myRequest)
 .then((resultSets) =>
 {
-    
+    // your code goes here
 })
 .catch((error) =>
 {
